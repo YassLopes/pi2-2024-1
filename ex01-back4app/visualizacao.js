@@ -1,7 +1,7 @@
 const chamadoURL = "https://parseapi.back4app.com/classes/Chamado";
 const headers = {
     "X-Parse-Application-Id":  process.env.ID,
-    "X-Parse-REST-API-Key": process.env.API_KEY
+    "X-Parse-REST-API-Key": process.env.API_KEY,
 };
 
 document.getElementById("btCarregar").onclick = async () => {
@@ -19,7 +19,7 @@ document.getElementById("btCarregar").onclick = async () => {
 
     data.results.forEach(chamado => {
         const li = document.createElement("li");
-        li.textContent = `${chamado.nome} - ${chamado.assunto}`;
+        li.textContent = `${chamado.nome} - ${chamado.assunto} - ${chamado.mensagem}`;
         const respostaInput = document.createElement("input");
         respostaInput.placeholder = "Escreva uma resposta";
         const finalizarCB = document.createElement("input");
