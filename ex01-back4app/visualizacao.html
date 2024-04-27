@@ -4,6 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizar Chamados</title>
+    <style>
+        /* Estilos para a lista de chamados e elementos interativos */
+        #listaChamados li {
+            margin-bottom: 20px; /* Espaço entre os itens da lista */
+            list-style: none; /* Remove os estilos de lista padrão */
+        }
+
+        /* Estilos específicos para a caixa de resposta */
+        .respostaInput {
+            width: 100%; /* A caixa de resposta ocupa a largura total do contêiner LI */
+            height: 50px; /* Altura fixa maior para melhorar a área de escrita */
+            margin-bottom: 10px; /* Espaço abaixo da caixa para separar dos botões */
+            padding: 5px; /* Espaçamento interno para o texto não ficar muito ao bordo */
+            font-size: 16px; /* Tamanho de fonte maior para facilidade de leitura */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve para destaque */
+        }
+
+        /* Estilos para botões para manter a consistência */
+        button {
+            padding: 10px 20px; /* Padding maior para botões mais fáceis de clicar */
+            margin-right: 5px; /* Margem à direita para não colar no próximo botão ou elemento */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            background-color: #007BFF; /* Cor de fundo azul */
+            color: white; /* Texto branco para contraste */
+            border: none; /* Remove a borda padrão */
+            border-radius: 4px; /* Bordas arredondadas */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Cor mais escura no hover */
+        }
+
+        /* Estilos para checkbox */
+        input[type="checkbox"] {
+            margin-right: 5px; /* Espaço antes do texto */
+        }
+    </style>
     <script src="./visualizacao.js" defer></script>
 </head>
 <body>

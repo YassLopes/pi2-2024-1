@@ -1,6 +1,6 @@
 const chamadoURL = "https://parseapi.back4app.com/classes/Chamado";
 const headers = {
-    "X-Parse-Application-Id": process.env.APP_ID,
+    "X-Parse-Application-Id":  process.env.ID,
     "X-Parse-REST-API-Key": process.env.API_KEY
 };
 
