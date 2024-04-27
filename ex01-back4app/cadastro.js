@@ -1,7 +1,7 @@
 const chamadoURL = "https://parseapi.back4app.com/classes/Chamado";
 const headersJson = {
-    "X-Parse-Application-Id": "iRnH8RFUpMtwo9rQA6oVwfUveShMIghHpOuQ7JPq",
-    "X-Parse-REST-API-Key": "RnURHvIzxQHiw4Ok0zQpYmHuQJEuLAbYQxDv68dU",
+    "X-Parse-Application-Id": process.env.APP_ID,
+    "X-Parse-REST-API-Key": process.env.API_KEY,
     "Content-Type": "application/json",
 };
 
